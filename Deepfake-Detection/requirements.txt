@@ -1,0 +1,26 @@
+# Core ML/DL
+torch>=2.0.0
+torchvision>=0.15.0
+efficientnet-pytorch>=0.7.1
+
+# Computer Vision
+opencv-python>=4.8.0
+Pillow>=10.0.0
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Web Framework
+flask>=3.0.0
+
+# Video Processing (optional)
+# av>=10.0.0
+
+# Utilities
+tqdm>=4.65.0

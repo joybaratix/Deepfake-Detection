@@ -1,0 +1,59 @@
+Listed directory MajorProject
+Listed directory Deepfake-Detection
+Viewed README.md:1-269
+Listed directory venv
+
+I'll guide you step-by-step on how to run your **Deepfake Detection Using CNN** project from scratch based on the project's setup. 
+
+Since you are using Windows, here is exactly what you need to do to get the application running from step 0:
+
+### Step 1: Open Terminal & Navigate to Project
+Open your terminal (PowerShell or Command Prompt) and change the directory to your specific project folder:
+```powershell
+cd e:\MCA\MajorProject\Deepfake-Detection
+```
+
+### Step 2: Activate the Virtual Environment
+It looks like you already have a virtual environment folder named `venv` inside the project. To use it, you need to activate it so that all dependencies are isolated:
+```powershell
+.\venv\Scripts\Activate
+```
+*(You should see `(venv)` appear at the beginning of your command prompt line, indicating it's active).*
+
+### Step 3: Install Required Dependencies
+If you haven't already, install all the Python libraries required for the project:
+```powershell
+pip install -r requirements.txt
+```
+
+### Step 4: Setup Dataset (Testing Data)
+To test if everything is working before trying real datasets, generate the sample dataset. This will mock out a few "real" and "fake" video inputs:
+```powershell
+python data/download_dataset.py --generate-sample --num-real 50 --num-fake 50
+```
+
+### Step 5: Preprocess Data (Extract Faces)
+The project works by extracting face frames from videos. Run the preprocessing script to do this on the downloaded videos:
+```powershell
+python src/data_preprocessing.py
+```
+*(This will generate cropped faces in `data/processed/real/` and `data/processed/fake/`)*
+
+### Step 6: Train the Model (Optional but Recommended)
+If you do not have a pretrained model inside your `models/` directory, you need to train one:
+```powershell
+python train.py
+```
+*(You can also use custom arguments to speed things up, like `python train.py --epochs 5 --batch-size 16`)*
+
+### Step 7: Launch the Web Interface
+Finally, once your model is trained and ready, launch the Flask web application where you can upload videos for testing:
+```powershell
+python app.py
+```
+
+Once the server starts running, open your web browser and go to:
+**http://localhost:5000**
+
+---
+Let me know if you hit any errors (like missing packages or CUDA issues) on any of these steps, and I can help you troubleshoot!

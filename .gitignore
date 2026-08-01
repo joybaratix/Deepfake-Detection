@@ -1,0 +1,37 @@
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+*.venv/
+
+# Python & Byte-code / Caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Heavy Datasets & Preprocessed data
+Deepfake-Detection/data/fake/*
+!Deepfake-Detection/data/fake/.gitkeep
+Deepfake-Detection/data/real/*
+!Deepfake-Detection/data/real/.gitkeep
+Deepfake-Detection/data/processed/*
+!Deepfake-Detection/data/processed/.gitkeep
+Deepfake-Detection/data/original_videos*
+
+# Uploads & Temporary Files
+Deepfake-Detection/uploads/*
+!Deepfake-Detection/uploads/.gitkeep
+
+# Model Checkpoints / Weights (Optional: remove comment if you prefer to exclude 80MB weights from git)
+# Deepfake-Detection/models/*.pth
+
+# OS & Editor generated files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
