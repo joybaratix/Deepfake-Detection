@@ -267,20 +267,6 @@ Deep learning models are often considered "black boxes." This project integrates
 
 ---
 
-## 👥 Project Team
-
-### Group 20 — MCA Major Project
-*Department of Computer Application, Dr. B. C. Roy Engineering College (BCREC)*
-
-- **Joyganesh Barat** (Roll: `120710242004`)
-- **Sayan Barat** (Roll: `120710242009`)
-
-**Project Guide:**  
-**Prof. Anupam Baidya**  
-*Department of Computer Application, BCREC*
-
----
-
 ## 📄 License
 
-This project is developed for educational and academic research purposes as part of the MCA Major Project curriculum at BCREC.
+This project is developed for educational and academic research purposes as part of the MCA Major Project curriculum.
